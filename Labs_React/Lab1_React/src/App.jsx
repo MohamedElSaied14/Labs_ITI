@@ -3,6 +3,7 @@ import Task from "./Components/task"
 import User from "./Components/movie"
 import Movie from "./Components/movie"
 import Movies from "./Components/movies"
+import ImageSlider from "./Components/Imageslider"
 function App() {
 
   var name = "OS"
@@ -12,6 +13,9 @@ function App() {
   return (
     <>
       <Task taskName={name}></Task>
+
+      <ImageSlider></ImageSlider>
+
       <Movies></Movies>
 
     </>
