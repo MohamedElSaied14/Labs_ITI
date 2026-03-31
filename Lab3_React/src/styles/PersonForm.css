@@ -1,0 +1,145 @@
+/* ============================================================
+   PersonForm.css — Add-person form component
+   Covers: card shell, top-bar, fields, labels, inputs, button
+   ============================================================ */
+
+/* ---------- Outer wrapper (centres the card) ---------- */
+.form-wrapper {
+  display:         flex;
+  justify-content: center;
+  align-items:     flex-start;
+  padding:         var(--space-md);
+}
+
+/* ---------- Card shell ---------- */
+.form-card {
+  background:    var(--bg-surface);
+  border:        1px solid var(--border-default);
+  border-radius: var(--radius-2xl);
+  padding:       36px 32px;
+  width:         100%;
+  max-width:     400px;
+  box-shadow:    var(--shadow-form);
+  position:      relative;
+  overflow:      hidden;
+}
+
+/* ---------- Rainbow top accent bar ---------- */
+.form-card__top-bar {
+  position:   absolute;
+  top:        0;
+  left:       0;
+  right:      0;
+  height:     3px;
+  background: linear-gradient(
+    90deg,
+    var(--accent-green),
+    var(--accent-cyan),
+    var(--accent-purple)
+  );
+}
+
+/* ---------- Card header (icon + title) ---------- */
+.form-card__header {
+  display:       flex;
+  align-items:   center;
+  gap:           10px;
+  margin-bottom: 28px;
+}
+
+.form-card__icon {
+  font-size: 20px;
+  color:     var(--accent-green);
+}
+
+.form-card__title {
+  margin:         0;
+  font-size:      20px;
+  font-weight:    700;
+  color:          var(--text-primary);
+  font-family:    var(--font-serif);
+  letter-spacing: -0.3px;
+}
+
+/* ---------- Field group ---------- */
+.form-field {
+  margin-bottom: 20px;
+}
+
+.form-field__label {
+  display:        block;
+  margin-bottom:  var(--space-sm);
+  font-size:      12px;
+  font-weight:    600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color:          var(--text-muted);
+  font-family:    var(--font-mono);
+}
+
+/* ---------- Text / number inputs ---------- */
+.form-field__input {
+  width:         100%;
+  padding:       12px var(--space-md);
+  background:    var(--bg-input);
+  border:        1.5px solid var(--border-default);
+  border-radius: var(--radius-md);
+  color:         var(--text-primary);
+  font-size:     15px;
+  outline:       none;
+  transition:    border-color var(--transition-fast),
+                 box-shadow   var(--transition-fast);
+  font-family:   inherit;
+}
+
+.form-field__input--error {
+  border-color: var(--accent-red) !important;
+}
+
+/* ---------- Inline error message ---------- */
+.form-field__error {
+  margin:      6px 0 0;
+  color:       var(--accent-red);
+  font-size:   12px;
+  font-family: var(--font-mono);
+}
+
+/* ---------- Submit button ---------- */
+.form-btn {
+  width:          100%;
+  margin-top:     var(--space-sm);
+  padding:        14px;
+  background:     var(--accent-green);
+  color:          var(--bg-base);
+  border:         none;
+  border-radius:  var(--radius-md);
+  font-size:      15px;
+  font-weight:    700;
+  cursor:         pointer;
+  letter-spacing: 0.5px;
+  transition:     background var(--transition-fast),
+                  transform  0.1s ease;
+  font-family:    inherit;
+}
+
+.form-btn:hover {
+  background: #c0f070;
+  transform:  translateY(-1px);
+}
+
+.form-btn:active {
+  transform: translateY(0);
+}
+
+/* ---------- Shake animation (validation error) ---------- */
+@keyframes shake {
+  0%,  100% { transform: translateX(0); }
+  20%        { transform: translateX(-8px); }
+  40%        { transform: translateX(8px); }
+  60%        { transform: translateX(-5px); }
+  80%        { transform: translateX(5px); }
+}
+
+.form-card--shake {
+  animation: shake 0.45s ease;
+}

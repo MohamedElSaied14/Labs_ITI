@@ -1,0 +1,101 @@
+/* ============================================================
+   variables.css — Design tokens & global resets
+   Import this ONCE in main.jsx / index.jsx (top of the tree)
+   ============================================================ */
+
+/* ---------- Design Tokens ---------- */
+:root {
+  /* Background layers */
+  --bg-base:        #0a0a15;
+  --bg-surface:     #13131f;
+  --bg-input:       #0a0a15;
+
+  /* Borders */
+  --border-subtle:  #1e1e2e;
+  --border-default: #2a2a40;
+
+  /* Text */
+  --text-primary:   #f0f0ff;
+  --text-muted:     #888aaa;
+  --text-faint:     #555770;
+  --text-faintest:  #3a3a55;
+
+  /* Accent palette */
+  --accent-green:   #b8ff45;
+  --accent-cyan:    #45e0ff;
+  --accent-purple:  #b845ff;
+  --accent-orange:  #ffaa45;
+  --accent-red:     #ff6b6b;
+
+  /* Dark pair for each accent (used as avatar bg text color) */
+  --accent-green-dark:  #0a1f00;
+  --accent-cyan-dark:   #001a20;
+  --accent-purple-dark: #1a0020;
+  --accent-orange-dark: #201000;
+  --accent-red-dark:    #200000;
+
+  /* Typography */
+  --font-sans:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --font-serif: 'Georgia', serif;
+  --font-mono:  monospace;
+
+  /* Spacing scale */
+  --space-xs:  4px;
+  --space-sm:  8px;
+  --space-md:  16px;
+  --space-lg:  24px;
+  --space-xl:  32px;
+  --space-2xl: 48px;
+
+  /* Radii */
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  18px;
+  --radius-2xl: 20px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-card:  0 6px 20px rgba(0, 0, 0, 0.4);
+  --shadow-heavy: 0 20px 60px rgba(0, 0, 0, 0.5);
+  --shadow-form:  0 20px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(184, 255, 69, 0.05);
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.25s ease;
+  --transition-slow: 0.35s ease;
+}
+
+/* ---------- Global Reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:  var(--bg-base);
+  color:       var(--text-primary);
+  font-family: var(--font-sans);
+  min-height:  100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Input focus ring (global) ---------- */
+input:focus {
+  border-color: var(--accent-green) !important;
+  box-shadow: 0 0 0 3px rgba(184, 255, 69, 0.12);
+  outline: none;
+}
+
+/* ---------- Remove number input arrows ---------- */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
