@@ -1,0 +1,244 @@
+{
+  "movies": [
+    {
+      "id": "m1",
+      "title": "Blade Runner 2049",
+      "type": "movie",
+      "genre": [
+        "Sci-Fi",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8,
+      "overview": "Young Blade Runner K's discovery of a long-buried secret leads him to track down former Blade Runner Rick Deckard, who's been missing for thirty years. A visually stunning meditation on humanity, memory, and what it means to be alive.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/gajva2L0rPYkEWjzgFlBXCAVBE5.jpg",
+      "year": 2017,
+      "favored": false
+    },
+    {
+      "id": "m2",
+      "title": "Dune: Part Two",
+      "type": "movie",
+      "genre": [
+        "Sci-Fi",
+        "Action",
+        "Adventure"
+      ],
+      "rating": 8.5,
+      "overview": "Paul Atreides unites with Chani and the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the known universe, he must prevent a terrible future only he can foresee.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/8b8R8l88Qje9dn9OE8PY05Nxl1X.jpg",
+      "year": 2024,
+      "favored": true
+    },
+    {
+      "id": "m3",
+      "title": "Oppenheimer",
+      "type": "movie",
+      "genre": [
+        "Drama",
+        "History",
+        "Thriller"
+      ],
+      "rating": 8.9,
+      "overview": "The story of American scientist J. Robert Oppenheimer and his role in the development of the atomic bomb. A gripping portrait of ambition, moral compromise, and the weight of history-altering decisions.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/8Gxv8gSFCU0XGDykEGv7zR1n2ua.jpg",
+      "year": 2023,
+      "favored": true
+    },
+    {
+      "id": "m4",
+      "title": "The Batman",
+      "type": "movie",
+      "genre": [
+        "Action",
+        "Crime",
+        "Drama"
+      ],
+      "rating": 7.8,
+      "overview": "When a sadistic serial killer begins murdering key political figures in Gotham, Batman is forced to investigate the city's hidden corruption and question his family's involvement.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/74xTEgt7R36Fpooo50r9T25onhq.jpg",
+      "year": 2022,
+      "favored": true
+    },
+    {
+      "id": "m5",
+      "title": "Everything Everywhere All at Once",
+      "type": "movie",
+      "genre": [
+        "Sci-Fi",
+        "Comedy",
+        "Drama"
+      ],
+      "rating": 7.8,
+      "overview": "A middle-aged Chinese immigrant is swept up in an adventure to save the multiverse. An absurdist, touching, and wildly inventive film about family, identity, and infinite possibility.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/w3LxiVYdWWRvEVdn5RYq6jIqkb1.jpg",
+      "year": 2022,
+      "favored": false
+    },
+    {
+      "id": "m6",
+      "title": "Hereditary",
+      "type": "movie",
+      "genre": [
+        "Horror",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": 7.3,
+      "overview": "When the matriarch of the Graham family passes away, her daughter's family begins to unravel cryptic and terrifying secrets about their ancestry, trying to outrun the sinister fate they have inherited.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/p9UMFOUmes7OoxnLdGPfCy7GICW.jpg",
+      "year": 2018,
+      "favored": false
+    },
+    {
+      "id": "m7",
+      "title": "Parasite",
+      "type": "movie",
+      "genre": [
+        "Thriller",
+        "Drama",
+        "Comedy"
+      ],
+      "rating": 8.5,
+      "overview": "Greed and class discrimination threaten the newly formed symbiotic relationship between the wealthy Park family and the destitute Kim clan. A masterful examination of social inequality.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "year": 2019,
+      "favored": true
+    },
+    {
+      "id": "m8",
+      "title": "The Witch",
+      "type": "movie",
+      "genre": [
+        "Horror",
+        "Mystery",
+        "Drama"
+      ],
+      "rating": 6.9,
+      "overview": "A family in 1630s New England is torn apart by the forces of witchcraft, black magic, and possession. Slow-burn folk horror that gets under your skin and stays there.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/nFPMYnHkS2BKlUGF68ILSeoMefP.jpg",
+      "year": 2015,
+      "favored": false
+    }
+  ],
+  "tvShows": [
+    {
+      "id": "tv1",
+      "title": "Severance",
+      "type": "tvShow",
+      "genre": [
+        "Sci-Fi",
+        "Drama",
+        "Thriller"
+      ],
+      "rating": 8.7,
+      "overview": "Mark leads a team of office workers whose memories have been surgically divided between their work and personal lives. When a mysterious colleague appears outside of work, they begin a journey to discover the truth about their jobs.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/pJgHIJIaA0FZhQpEsMqM94MRv8q.jpg",
+      "year": 2022,
+      "favored": false
+    },
+    {
+      "id": "tv2",
+      "title": "The Bear",
+      "type": "tvShow",
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "rating": 8.6,
+      "overview": "A young chef from the fine dining world comes home to Chicago to run his family's sandwich shop after a tragedy. An intense, deeply human portrait of family, grief, and the relentless pursuit of excellence.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/sHm6LYMlAEfBJzRBF5LCQgWKQ0.jpg",
+      "year": 2022,
+      "favored": false
+    },
+    {
+      "id": "tv3",
+      "title": "Succession",
+      "type": "tvShow",
+      "genre": [
+        "Drama",
+        "Comedy"
+      ],
+      "rating": 8.9,
+      "overview": "The Roy family, owners of the world's biggest media and entertainment conglomerate, are fighting for control of the empire as their aging patriarch considers stepping down.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/e2X8g7UKDXWQD0EvNbAc8CQLMKC.jpg",
+      "year": 2018,
+      "favored": true
+    },
+    {
+      "id": "tv4",
+      "title": "Dark",
+      "type": "tvShow",
+      "genre": [
+        "Sci-Fi",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": 8.8,
+      "overview": "A family saga with a supernatural twist set in a German town, where the disappearance of two young children exposes the relationships among four families and their dependence on each other — and a time travel conspiracy spanning several generations.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/apbrbWs5M6Co6FGQPJGEUpNhiGU.jpg",
+      "year": 2017,
+      "favored": false
+    },
+    {
+      "id": "tv5",
+      "title": "The Last of Us",
+      "type": "tvShow",
+      "genre": [
+        "Drama",
+        "Action",
+        "Horror"
+      ],
+      "rating": 8.7,
+      "overview": "After a global catastrophe, Joel, a hardened survivor, is hired to smuggle Ellie, a 14-year-old girl, out of an oppressive quarantine zone. What starts as a small job soon becomes a brutal, heartbreaking journey.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/uKvVjHNqB5VmOrdxqAt2F7J78ED.jpg",
+      "year": 2023,
+      "favored": false
+    },
+    {
+      "id": "tv6",
+      "title": "House of the Dragon",
+      "type": "tvShow",
+      "genre": [
+        "Fantasy",
+        "Action",
+        "Drama"
+      ],
+      "rating": 8.4,
+      "overview": "An internal succession war within House Targaryen at the height of its power, set 200 years before the events of Game of Thrones. Dragons soar, alliances crumble, and the Iron Throne demands its price in blood.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/z2yahl2uefxDCl0nogcRBstwruJ.jpg",
+      "year": 2022,
+      "favored": false
+    },
+    {
+      "id": "tv7",
+      "title": "Shogun",
+      "type": "tvShow",
+      "genre": [
+        "Drama",
+        "Action",
+        "History"
+      ],
+      "rating": 8.6,
+      "overview": "In feudal Japan, Lord Yoshii Toranaga is fighting for his life against a deadly conspiracy within the Council of Regents when a mysterious European ship is found marooned in a nearby fishing village.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/7O4iVfOMQmdCSxhOg1WnzG1AgYT.jpg",
+      "year": 2024,
+      "favored": false
+    },
+    {
+      "id": "tv8",
+      "title": "True Detective",
+      "type": "tvShow",
+      "genre": [
+        "Crime",
+        "Drama",
+        "Mystery"
+      ],
+      "rating": 9,
+      "overview": "Seasonal anthology series in which police investigations unearth the personal and professional secrets of those involved — both the investigators and the investigated. Season 1 remains one of television's finest achievements.",
+      "posterUrl": "https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg",
+      "year": 2014,
+      "favored": true
+    }
+  ]
+}

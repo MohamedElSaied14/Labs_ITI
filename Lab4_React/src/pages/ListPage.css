@@ -1,0 +1,189 @@
+/* ListPage.css */
+.list-page {
+  min-height: calc(100vh - var(--nav-h));
+  background: var(--bg-base);
+}
+
+.list-page__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: var(--sp-8) var(--sp-10);
+}
+
+/* Header */
+.list-page__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  margin-bottom: var(--sp-6);
+  flex-wrap: wrap;
+}
+
+.list-page__title {
+  font-family: var(--font-display);
+  font-size: 40px;
+  letter-spacing: 3px;
+  color: var(--text-primary);
+  line-height: 1;
+  margin-bottom: var(--sp-1);
+}
+
+.list-page__count {
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  flex-wrap: wrap;
+}
+
+.list-page__search-badge {
+  background: var(--accent-dim);
+  color: var(--accent);
+  border: 1px solid var(--border-active);
+  padding: 2px 8px;
+  border-radius: var(--r-full);
+  font-size: 11px;
+}
+
+/* Controls */
+.list-page__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+}
+
+.list-page__sort {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-1);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--r-full);
+  padding: 4px;
+}
+
+.list-page__sort-label {
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-faint);
+  padding: 0 var(--sp-2);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.list-page__sort-btn {
+  padding: 5px 12px;
+  border-radius: var(--r-full);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  background: none;
+  cursor: pointer;
+  transition: all var(--t-fast);
+  white-space: nowrap;
+}
+
+.list-page__sort-btn:hover { color: var(--text-primary); background: var(--border-subtle); }
+.list-page__sort-btn.active { color: var(--accent); background: var(--accent-dim); }
+
+.list-page__filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 8px 16px;
+  border-radius: var(--r-full);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all var(--t-fast);
+}
+
+.list-page__filter-toggle:hover { border-color: var(--border-default); color: var(--text-primary); }
+.list-page__filter-toggle.active { color: var(--accent); border-color: var(--border-active); background: var(--accent-dim); }
+
+.list-page__filter-badge {
+  background: var(--accent);
+  color: var(--bg-base);
+  font-size: 10px;
+  font-weight: 700;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  line-height: 1;
+}
+
+/* Grid */
+.list-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--sp-4);
+}
+
+/* Skeletons */
+.list-page__skeleton {
+  aspect-ratio: 2/3;
+  border-radius: var(--r-lg);
+  background: var(--bg-surface);
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0%, 100% { opacity: 0.5; }
+  50%       { opacity: 1; }
+}
+
+/* Empty state */
+.list-page__empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sp-12) var(--sp-6);
+  text-align: center;
+  gap: var(--sp-3);
+}
+
+.list-page__empty-icon {
+  font-size: 48px;
+  filter: grayscale(1);
+  opacity: 0.4;
+}
+
+.list-page__empty-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.list-page__empty-sub {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.list-page__empty-reset {
+  padding: 9px 20px;
+  border-radius: var(--r-full);
+  font-size: 13px;
+  font-family: var(--font-mono);
+  color: var(--accent);
+  background: var(--accent-dim);
+  border: 1px solid var(--border-active);
+  cursor: pointer;
+  margin-top: var(--sp-2);
+  transition: all var(--t-fast);
+}
+
+.list-page__empty-reset:hover { background: var(--accent); color: var(--bg-base); }
+
+@media (max-width: 768px) {
+  .list-page__inner { padding: var(--sp-6) var(--sp-4); }
+  .list-page__header { flex-direction: column; }
+  .list-page__grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+}
