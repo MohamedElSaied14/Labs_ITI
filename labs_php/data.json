@@ -1,0 +1,31 @@
+[
+    {
+        "first_name": "mohamed",
+        "last_name": "elsabagh",
+        "address": "green plaza naser.st",
+        "country": "Egypt",
+        "gender": "Male",
+        "skills": [
+            "PHP",
+            "J2SE"
+        ],
+        "username": "mohamedElsaied",
+        "department": "OpenSource",
+        "id": "rec_69dbb026dc9466.91687319",
+        "created_at": "2026-04-12 16:45:58"
+    },
+    {
+        "first_name": "Ahly",
+        "last_name": "prepaid",
+        "address": "green plaza",
+        "country": "Egypt",
+        "gender": "Female",
+        "skills": [
+            "MySQL"
+        ],
+        "username": "wdwadasdw",
+        "department": "OpenSource",
+        "id": "rec_69dbb049901b84.44998732",
+        "created_at": "2026-04-12 16:46:33"
+    }
+]
